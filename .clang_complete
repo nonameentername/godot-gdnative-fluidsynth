@@ -1,0 +1,17 @@
+-DDEBUG
+-include src/gdlibrary.cpp
+-include src/gdmidiaudiostreamplayer.cpp
+-I.
+-Igodot-cpp/godot_headers
+-Igodot-cpp/include
+-Igodot-cpp/include/core
+-Igodot-cpp/include/gen
+-Isrc
+-Lgodot-cpp/bin
+-Og
+-fPIC
+-g3
+-lfluidsynth
+-lgodot-cpp.linux.debug.64
+-shared
+-std=c++17

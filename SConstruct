@@ -18,6 +18,7 @@ opts.Add(PathVariable('target_name', 'The library name.', 'libgdmidiplayer', Pat
 godot_headers_path = "godot-cpp/godot_headers/"
 cpp_bindings_path = "godot-cpp/"
 cpp_library = "libgodot-cpp"
+fluidsynth_library = "fluidsynth"
 
 # only support 64 at this time..
 bits = 64
@@ -79,7 +80,7 @@ cpp_library += '.' + str(bits)
 # make sure our binding library is properly includes
 env.Append(CPPPATH=['.', godot_headers_path, cpp_bindings_path + 'include/', cpp_bindings_path + 'include/core/', cpp_bindings_path + 'include/gen/'])
 env.Append(LIBPATH=[cpp_bindings_path + 'bin/'])
-env.Append(LIBS=[cpp_library])
+env.Append(LIBS=[cpp_library, fluidsynth_library])
 
 # tweak this if you want to use different folders, or more folders, to store your source code in.
 env.Append(CPPPATH=['src/'])
