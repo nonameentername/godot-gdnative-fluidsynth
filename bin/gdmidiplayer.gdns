@@ -4,5 +4,5 @@
 
 [resource]
 resource_name = "gdmidiplayer"
-class_name = "GDMidiPlayer"
+class_name = "GDMidiAudioStreamPlayer"
 library = ExtResource( 1 )

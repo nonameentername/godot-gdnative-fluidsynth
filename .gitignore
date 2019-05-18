@@ -3,3 +3,5 @@
 .import
 .sconsign.dblite
 bin/x11/
+assets/example.mid
+assets/example.sf2

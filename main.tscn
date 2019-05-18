@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://bin/gdmidiaudiostreamplayer.gdns" type="Script" id=1]
+[ext_resource path="res://bin/gdmidiplayer.gdns" type="Script" id=1]
 
 [sub_resource type="AudioStreamGenerator" id=1]
 
@@ -8,5 +8,7 @@
 
 [node name="player" type="AudioStreamPlayer" parent="."]
 stream = SubResource( 1 )
+autoplay = true
 script = ExtResource( 1 )
 soundfont = "res://assets/example.sf2"
+"midi file" = "res://assets/example.mid"
