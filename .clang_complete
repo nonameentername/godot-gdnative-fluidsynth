@@ -1,6 +1,7 @@
 -DDEBUG
 -include src/gdlibrary.cpp
 -include src/gdmidiplayer.cpp
+-include src/midi_file_reader.cpp
 -I.
 -Igodot-cpp/godot_headers
 -Igodot-cpp/include

@@ -1,0 +1,13 @@
+[remap]
+
+importer="midi"
+type="MidiFileReader"
+path="res://.import/example.mid-d5ac8fb90a427c551a036c0bfbe1cc2a.midstr"
+
+[deps]
+
+source_file="res://assets/example.mid"
+dest_files=[ "res://.import/example.mid-d5ac8fb90a427c551a036c0bfbe1cc2a.midstr" ]
+
+[params]
+

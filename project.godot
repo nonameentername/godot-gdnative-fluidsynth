@@ -8,15 +8,43 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "ResourceFormatLoader",
+"class": "MidiDataLoader",
+"language": "GDScript",
+"path": "res://addons/midi/midi_resource_loader.gd"
+}, {
+"base": "ResourceFormatSaver",
+"class": "MidiDataSaver",
+"language": "GDScript",
+"path": "res://addons/midi/midi_resource_saver.gd"
+}, {
+"base": "ResourceFormatLoader",
+"class": "SoundFontDataLoader",
+"language": "GDScript",
+"path": "res://addons/midi/soundfont_resource_loader.gd"
+}, {
+"base": "ResourceFormatSaver",
+"class": "SoundFontDataSaver",
+"language": "GDScript",
+"path": "res://addons/midi/soundfont_resource_saver.gd"
+} ]
 _global_script_class_icons={
-
+"MidiDataLoader": "",
+"MidiDataSaver": "",
+"SoundFontDataLoader": "",
+"SoundFontDataSaver": ""
 }
 
 [application]
 
 config/name="MidiPlayer"
+run/main_scene="res://main.tscn"
 config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "midi" )
 
 [rendering]
 

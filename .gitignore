@@ -2,6 +2,8 @@
 *.so
 .import
 .sconsign.dblite
+.mono
 bin/x11/
 assets/example.mid
 assets/example.sf2
+build

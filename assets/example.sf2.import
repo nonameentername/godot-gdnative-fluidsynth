@@ -1,0 +1,13 @@
+[remap]
+
+importer="soundfont"
+type="SoundFontFileReader"
+path="res://.import/example.sf2-97bbfbf7e2b2afc9bebb284e9ae034b8.sf2str"
+
+[deps]
+
+source_file="res://assets/example.sf2"
+dest_files=[ "res://.import/example.sf2-97bbfbf7e2b2afc9bebb284e9ae034b8.sf2str" ]
+
+[params]
+

@@ -6,7 +6,12 @@
 #include <AudioStreamPlayer.hpp>
 #include <AudioStreamGeneratorPlayback.hpp>
 #include <ProjectSettings.hpp>
+#include <ResourceLoader.hpp>
+#include <Resource.hpp>
+#include <File.hpp>
 #include <fluidsynth.h>
+#include "midi_file_reader.h"
+#include "soundfont_file_reader.h"
 
 
 namespace godot {
