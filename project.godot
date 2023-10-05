@@ -44,7 +44,11 @@ config/icon="res://icon.png"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "midi" )
+enabled=PoolStringArray( "res://addons/midi/plugin.cfg" )
+
+[mono]
+
+project/assembly_name="MidiPlayer"
 
 [rendering]
 

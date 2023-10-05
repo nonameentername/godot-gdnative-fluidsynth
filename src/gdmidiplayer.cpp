@@ -14,14 +14,14 @@ void *my_open(const char *filename) {
     return p;
 }
 
-int my_read(void *buf, int count, void *handle) {
+int my_read(void *buf, long long count, void *handle) {
     memcpy(buf, (handle + position), count);
     position = position + count;
 
     return FLUID_OK;
 }
 
-int my_seek(void *handle, long offset, int origin) {
+int my_seek(void *handle, long long offset, int origin) {
     switch(origin) {
         case SEEK_SET:
             position = offset;
@@ -45,7 +45,7 @@ int my_close(void *handle) {
     return FLUID_OK;
 }
 
-long my_tell(void *handle) {
+long long my_tell(void *handle) {
     return position;
 }
 
